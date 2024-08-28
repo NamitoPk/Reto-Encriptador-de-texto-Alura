@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <section id="viewport">
+        <header class="header">Bienvenido al encriptador de texto</header>
+        <main class="main">
+            <h1 class="instruccion">Ingresa el texto que deseas encriptar (letras minúsculas, sin acentos ni caracteres especiales). </h1>
+            <div class="main__campos">
+                <textarea id="textoIngresado" cols="30" rows="10" placeholder="Escribe el mensaje:"></textarea>
+                <textarea id="textoSalida" cols="20" rows="10" placeholder="Tu resultado encriptado:"></textarea>
+            </div>
+
+            <div class="main__botones">
+                <button id="encriptar" onclick="botonEncriptar()">ENCRIPTAR TEXTO</button>
+                <button id="desencriptar" onclick="botonDesencriptar()">DESENCRIPTAR TEXTO</button>
+                <button id="copiar" onclick="botonCopiar()">COPIAR</button>
+            </div>
+        </main>
+        <footer class="footer">Desarrollado por Gibsen De Sedas - G7 2024 - AluraLatam.</footer>
+    </section>
+<script src="app.js"></script>    
+</body>
+
+<div class="capa"></div>
+</html>
